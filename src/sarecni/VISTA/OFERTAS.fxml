@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="1024.0" styleClass="mainFxmlClass" stylesheets="@../MODELO/CSS/ofertas.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sarecni.CONTROLADOR.OFERTASController">
+   <children>
+      <TableView fx:id="Evaluaciones_Ofertadas" layoutX="7.0" layoutY="10.0" prefHeight="583.0" prefWidth="1009.0" stylesheets="@../MODELO/CSS/ofertas.css" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="8.0" AnchorPane.topAnchor="10.0">
+        <columns>
+          <TableColumn id="celdas" fx:id="Id" prefWidth="38.0" text="ID" />
+          <TableColumn fx:id="Estrategia" prefWidth="200.0" text="ESTRATEGIA" />
+            <TableColumn id="celdas2" fx:id="Ponderacion" prefWidth="50.0" text="\%" />
+            <TableColumn id="celdas" fx:id="Fecha" prefWidth="120.0" text="FECHA" />
+            <TableColumn id="celdas" fx:id="Seccion" prefWidth="200.0" text="SECCIÓN" />
+            <TableColumn fx:id="Materia" prefWidth="390.0" text="MATERIA" />
+        </columns>
+         <contextMenu>
+            <ContextMenu>
+              <items>
+                <MenuItem mnemonicParsing="false" onAction="#NUEVA_OFERTA" text="NUEVA OFERTA" />
+                  <MenuItem mnemonicParsing="false" onAction="#MODIFICAR_OFERTA" text="MODIFICAR" />
+                  <MenuItem mnemonicParsing="false" onAction="#ELIMINAR_OFERTA" text="ELIMINAR" />
+                  <MenuItem mnemonicParsing="false" onAction="#CERRAR_VENTANA" text="CERRAR" />
+              </items>
+            </ContextMenu>
+         </contextMenu>
+      </TableView>
+   </children>
+</AnchorPane>

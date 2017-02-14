@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ProgressIndicator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="700.0" prefWidth="1200.0" styleClass="mainFxmlClass" stylesheets="@../MODELO/CSS/inicio.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sarecni.CONTROLADOR.INICIOController">
+  <children>
+    <TabPane prefHeight="601.0" prefWidth="996.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="85.0">
+      <tabs>
+        <Tab text="REGISTRO DE NOTAS">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="542.0" prefWidth="708.0">
+              <children>
+                <TableView id="celdas" fx:id="Acta_Notas" prefHeight="542.0" prefWidth="996.0" stylesheets="@../MODELO/CSS/inicio.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                  <columns>
+                    <TableColumn fx:id="Nro" editable="true" maxWidth="5000.0" minWidth="10.0" prefWidth="50.0" text="NRO" visible="true" />
+                    <TableColumn fx:id="Cedula" maxWidth="5000.0" minWidth="10.0" prefWidth="75.0" text="CÉDULA" />
+                    <TableColumn fx:id="Apellidos" maxWidth="5000.0" minWidth="10.0" prefWidth="200.0" style="-fx-alignment: center-left;" text="APELLIDOS" />
+                    <TableColumn fx:id="Nombres" maxWidth="5000.0" minWidth="10.0" prefWidth="200.0" style="-fx-alignment: center-left;" text="NOMBRES" />
+                    <TableColumn fx:id="Fecha1" maxWidth="10000.0" minWidth="8.0" prefWidth="8.0" text="dd-mm-aaaa">
+                      <columns>
+                        <TableColumn fx:id="Evaluacion1" prefWidth="45.0" text="EVA" />
+                        <TableColumn fx:id="Porciento1" prefWidth="45.0" text="00%" />
+                      </columns>
+                    </TableColumn>
+                    <TableColumn fx:id="Fecha2" maxWidth="10000.0" minWidth="8.0" prefWidth="8.0" text="dd-mm-aaaa">
+                      <columns>
+                        <TableColumn fx:id="Evaluacion2" prefWidth="45.0" text="EVA" />
+                        <TableColumn fx:id="Porciento2" prefWidth="45.0" text="00%" />
+                      </columns>
+                    </TableColumn>
+                    <TableColumn fx:id="Fecha3" maxWidth="10000.0" minWidth="8.0" prefWidth="8.0" text="dd-mm-aaaa">
+                      <columns>
+                        <TableColumn fx:id="Evaluacion3" prefWidth="45.0" text="EVA" />
+                        <TableColumn fx:id="Porciento3" prefWidth="45.0" text="00%" />
+                      </columns>
+                    </TableColumn>
+                    <TableColumn fx:id="Fecha4" maxWidth="10000.0" minWidth="8.0" prefWidth="8.0" text="dd-mm-aaaa">
+                      <columns>
+                        <TableColumn fx:id="Evaluacion4" prefWidth="45.0" text="EVA" />
+                        <TableColumn fx:id="Porciento4" prefWidth="45.0" text="00%" />
+                      </columns>
+                    </TableColumn>
+                    <TableColumn fx:id="Fecha5" maxWidth="10000.0" minWidth="8.0" prefWidth="8.0" text="dd-mm-aaaa">
+                      <columns>
+                        <TableColumn fx:id="Evaluacion5" prefWidth="45.0" text="EVA" />
+                        <TableColumn fx:id="Porciento5" prefWidth="45.0" text="00%" />
+                      </columns>
+                    </TableColumn>
+                    <TableColumn fx:id="Fecha6" maxWidth="10000.0" minWidth="8.0" prefWidth="8.0" text="dd-mm-aaaa">
+                      <columns>
+                        <TableColumn fx:id="Evaluacion6" prefWidth="45.0" text="EVA" />
+                        <TableColumn fx:id="Porciento6" prefWidth="45.0" text="00%" />
+                      </columns>
+                    </TableColumn>
+                    <TableColumn fx:id="Fecha7" maxWidth="10000.0" minWidth="8.0" prefWidth="8.0" text="dd-mm-aaaa">
+                      <columns>
+                        <TableColumn fx:id="Evaluacion7" prefWidth="45.0" text="EVA" />
+                        <TableColumn fx:id="Porciento7" prefWidth="45.0" text="00%" />
+                      </columns>
+                    </TableColumn>
+                    <TableColumn fx:id="Fecha8" maxWidth="10000.0" minWidth="8.0" prefWidth="8.0" text="dd-mm-aaaa">
+                      <columns>
+                        <TableColumn fx:id="Evaluacion8" prefWidth="45.0" text="EVA" />
+                        <TableColumn fx:id="Porciento8" prefWidth="45.0" text="00%" />
+                      </columns>
+                    </TableColumn>
+                    <TableColumn fx:id="Fecha9" maxWidth="10000.0" minWidth="8.0" prefWidth="8.0" text="dd-mm-aaaa">
+                      <columns>
+                        <TableColumn fx:id="Evaluacion9" prefWidth="45.0" text="EVA" />
+                        <TableColumn fx:id="Porciento9" prefWidth="45.0" text="00%" />
+                      </columns>
+                    </TableColumn>
+                    <TableColumn fx:id="Fecha10" maxWidth="10000.0" minWidth="8.0" prefWidth="8.0" text="dd-mm-aaaa">
+                      <columns>
+                        <TableColumn fx:id="Evaluacion10" prefWidth="45.0" text="EVA" />
+                        <TableColumn fx:id="Porciento10" prefWidth="45.0" text="00%" />
+                      </columns>
+                    </TableColumn>
+                    <TableColumn fx:id="Resumen" maxWidth="10000.0" minWidth="8.0" prefWidth="8.0" style="-fx-alignment: center-left;" text="RESUMEN">
+                      <columns>
+                        <TableColumn fx:id="Definitiva" prefWidth="90.0" text="DEFINITIVA" />
+                        <TableColumn fx:id="Letras" prefWidth="120.0" style="-fx-alignment: center-left;" text="LETRAS" />
+                      </columns>
+                    </TableColumn>
+                  </columns>
+                           <contextMenu>
+                              <ContextMenu>
+                                <items>
+                                  <MenuItem mnemonicParsing="false" onAction="#NOTAS_ESTUDIANTE_SELECCIONADO" text="REVISAR NOTAS" />
+                                </items>
+                              </ContextMenu>
+                           </contextMenu>
+                </TableView>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="REGISTRO DE INASISTENCIAS">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView fx:id="Acta_Inasistencias" prefHeight="564.0" prefWidth="1168.0" AnchorPane.bottomAnchor="4.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="4.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn fx:id="INro" prefWidth="50.0" text="NRO" />
+                            <TableColumn fx:id="ICedula" prefWidth="75.0" text="CÉDULA" />
+                              <TableColumn fx:id="IApellidos" prefWidth="200.0" text="APELLIDOS" />
+                              <TableColumn fx:id="INombres" prefWidth="200.0" text="NOMBRES" />
+                              <TableColumn fx:id="Semana_1" prefWidth="66.0" text="1">
+                                 <columns>
+                                    <TableColumn fx:id="Teorica_1" maxWidth="100.0" prefWidth="25.0" text="T" />
+                                    <TableColumn fx:id="Practica_1" maxWidth="100.0" prefWidth="25.0" text="P" />
+                                 </columns>
+                              </TableColumn>
+                              <TableColumn fx:id="Semana_2" maxWidth="334.0" prefWidth="334.0" text="2">
+                                 <columns>                                    
+                                          <TableColumn fx:id="Teorica_2" maxWidth="100.0" prefWidth="25.0" text="T" />
+                                          <TableColumn fx:id="Practica_2" maxWidth="100.0" prefWidth="25.0" text="P" />                                   
+                                 </columns>
+                              </TableColumn>
+                              <TableColumn fx:id="Semana_3" prefWidth="200.0" text="3">
+                                 <columns>                                    
+                                          <TableColumn fx:id="Teorica_3" maxWidth="100.0" prefWidth="25.0" text="T" />
+                                          <TableColumn fx:id="Practica_3" maxWidth="100.0" prefWidth="25.0" text="P" />                                    
+                                 </columns>
+                              </TableColumn>
+                              <TableColumn fx:id="Semana_4" prefWidth="200.0" text="4">
+                                 <columns>                                    
+                                          <TableColumn fx:id="Teorica_4" maxWidth="100.0" prefWidth="25.0" text="T" />
+                                          <TableColumn fx:id="Practica_4" maxWidth="100.0" prefWidth="25.0" text="P" />                                      
+                                 </columns>
+                              </TableColumn>
+                              <TableColumn fx:id="Semana_5" prefWidth="200.0" text="5">
+                                 <columns>                                    
+                                          <TableColumn fx:id="Teorica_5" maxWidth="100.0" prefWidth="25.0" text="T" />
+                                          <TableColumn fx:id="Practica_5" maxWidth="100.0" prefWidth="25.0" text="P" />                                      
+                                 </columns>
+                              </TableColumn>
+                              <TableColumn fx:id="Semana_6" prefWidth="200.0" text="6">
+                                 <columns>                                    
+                                          <TableColumn fx:id="Teorica_6" maxWidth="100.0" prefWidth="25.0" text="T" />
+                                          <TableColumn fx:id="Practica_6" maxWidth="100.0" prefWidth="25.0" text="P" />                                       
+                                 </columns>
+                              </TableColumn>
+                              <TableColumn fx:id="Semana_7" prefWidth="200.0" text="7">
+                                 <columns>                                    
+                                          <TableColumn fx:id="Teorica_7" maxWidth="100.0" prefWidth="25.0" text="T" />
+                                          <TableColumn fx:id="Practica_7" maxWidth="100.0" prefWidth="25.0" text="P" />                                       
+                                 </columns>
+                              </TableColumn>
+                              <TableColumn fx:id="Semana_8" prefWidth="200.0" text="8">
+                                 <columns>                                    
+                                          <TableColumn fx:id="Teorica_8" maxWidth="100.0" prefWidth="25.0" text="T" />
+                                          <TableColumn fx:id="Practica_8" maxWidth="100.0" prefWidth="25.0" text="P" />                                       
+                                 </columns>
+                              </TableColumn>
+                              <TableColumn fx:id="Semana_9" prefWidth="200.0" text="9">
+                                 <columns>                                    
+                                          <TableColumn fx:id="Teorica_9" maxWidth="100.0" prefWidth="25.0" text="T" />
+                                          <TableColumn fx:id="Practica_9" maxWidth="100.0" prefWidth="25.0" text="P" />                                       
+                                 </columns>
+                              </TableColumn>
+                              <TableColumn fx:id="Semana_10" prefWidth="200.0" text="10">
+                                 <columns>                                    
+                                          <TableColumn fx:id="Teorica_10" maxWidth="100.0" prefWidth="25.0" text="T" />
+                                          <TableColumn fx:id="Practica_10" maxWidth="100.0" prefWidth="25.0" text="P" />                                       
+                                 </columns>
+                              </TableColumn>
+                              <TableColumn fx:id="Semana_11" prefWidth="200.0" text="11">
+                                 <columns>                                    
+                                          <TableColumn fx:id="Teorica_11" maxWidth="100.0" prefWidth="25.0" text="T" />
+                                          <TableColumn fx:id="Practica_11" maxWidth="100.0" prefWidth="25.0" text="P" />                                       
+                                 </columns>
+                              </TableColumn>
+                              <TableColumn fx:id="Semana_12" prefWidth="200.0" text="12">
+                                 <columns>                                    
+                                          <TableColumn fx:id="Teorica_12" maxWidth="100.0" prefWidth="25.0" text="T" />
+                                          <TableColumn fx:id="Practica_12" maxWidth="100.0" prefWidth="25.0" text="P" />                                       
+                                 </columns>
+                              </TableColumn>
+                              <TableColumn fx:id="Semana_13" prefWidth="200.0" text="13">
+                                 <columns>                                    
+                                          <TableColumn fx:id="Teorica_13" maxWidth="100.0" prefWidth="25.0" text="T" />
+                                          <TableColumn fx:id="Practica_13" maxWidth="100.0" prefWidth="25.0" text="P" />                                      
+                                 </columns>
+                              </TableColumn>
+                              <TableColumn fx:id="Semana_14" prefWidth="200.0" text="14">
+                                 <columns>                                    
+                                          <TableColumn fx:id="Teorica_14" maxWidth="100.0" prefWidth="25.0" text="T" />
+                                          <TableColumn fx:id="Practica_14" maxWidth="100.0" prefWidth="25.0" text="P" />                                      
+                                 </columns>
+                              </TableColumn>
+                              <TableColumn fx:id="Semana_15" prefWidth="200.0" text="15">
+                                 <columns>                                    
+                                          <TableColumn fx:id="Teorica_15" maxWidth="100.0" prefWidth="25.0" text="T" />
+                                          <TableColumn fx:id="Practica_15" maxWidth="100.0" prefWidth="25.0" text="P" />                                       
+                                 </columns>
+                              </TableColumn>
+                              <TableColumn fx:id="Semana_16" prefWidth="200.0" text="16">
+                                 <columns>                                    
+                                          <TableColumn fx:id="Teorica_16" maxWidth="100.0" prefWidth="25.0" text="T" />
+                                          <TableColumn fx:id="Practica_16" maxWidth="100.0" prefWidth="25.0" text="P" />                                       
+                                 </columns>
+                              </TableColumn>
+                              <TableColumn fx:id="Inasistencias" prefWidth="75.0" text="INASISTENCIAS">
+                                 <columns>
+                                    <TableColumn fx:id="IPorciento" prefWidth="40.0" text="\%" />
+                                    <TableColumn fx:id="Condicion" prefWidth="100.0" text="CONDICIÓN" />
+                                 </columns>
+                              </TableColumn>
+                          </columns>
+                        </TableView>
+                     </children></AnchorPane>
+          </content>
+        </Tab>
+        <Tab text="ESTADÍSTICAS">
+          <content>
+            <AnchorPane id="Content" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+              <children>
+                <BarChart layoutX="14.0" layoutY="14.0" prefHeight="328.0" prefWidth="968.0">
+                  <xAxis>
+                    <CategoryAxis side="BOTTOM" />
+                  </xAxis>
+                  <yAxis>
+                    <NumberAxis side="LEFT" />
+                  </yAxis>
+                </BarChart>
+                <TableView layoutX="76.0" layoutY="356.0" prefHeight="201.0" prefWidth="565.0">
+                  <columns>
+                    <TableColumn prefWidth="100.0" text="EVALUACIONES">
+                      <columns>
+                        <TableColumn prefWidth="75.0" text="TIPO" />
+                        <TableColumn prefWidth="30.0" text="\%" />
+                        <TableColumn prefWidth="75.0" text="FECHA" />
+                      </columns>
+                    </TableColumn>
+                    <TableColumn prefWidth="100.0" text="APROBADOS">
+                      <columns>
+                        <TableColumn prefWidth="60.0" text="TOTAL" />
+                        <TableColumn prefWidth="35.0" text="\%" />
+                      </columns>
+                    </TableColumn>
+                    <TableColumn prefWidth="100.0" text="REPROBADOS">
+                      <columns>
+                        <TableColumn prefWidth="60.0" text="TOTAL" />
+                        <TableColumn prefWidth="35.0" text="\%" />
+                      </columns>
+                    </TableColumn>
+                    <TableColumn prefWidth="100.0" text="INASISTENCIAS">
+                      <columns>
+                        <TableColumn prefWidth="60.0" text="TOTAL" />
+                        <TableColumn prefWidth="35.0" text="\%" />
+                      </columns>
+                    </TableColumn>
+                    <TableColumn prefWidth="75.0" text="PROMEDIO" />
+                  </columns>
+                </TableView>
+                <TableView layoutX="671.0" layoutY="356.0" prefHeight="200.0" prefWidth="268.0">
+                  <columns>
+                    <TableColumn prefWidth="200.0" text="DESCRIPCIÓN" />
+                    <TableColumn prefWidth="45.0" text="TOTAL" />
+                  </columns>
+                </TableView>
+              </children>
+            </AnchorPane>
+          </content>
+        </Tab>
+      </tabs>
+    </TabPane>
+    <MenuBar layoutX="14.0" layoutY="14.0" prefHeight="29.0" prefWidth="260.0">
+      <menus>
+        <Menu mnemonicParsing="false" text="Sarecni">
+          <items>
+                  <MenuItem fx:id="Evaluaciones" mnemonicParsing="false" onAction="#EVALUACIONES" text="Evaluaciones" />
+                  <MenuItem mnemonicParsing="false" onAction="#REVISAR_NOTAS" text="Notas" />
+            <MenuItem fx:id="Cerrar" mnemonicParsing="false" onAction="#CERRAR_APLICACION" text="Cerrar" />
+          </items>
+        </Menu>
+        <Menu fx:id="Actas" mnemonicParsing="false" onAction="#PROCESANDO_ACTAS" text="Actas">
+          <items>
+            <MenuItem mnemonicParsing="false" text="Delete" />
+          </items>
+        </Menu>
+        <Menu mnemonicParsing="false" text="Ayuda">
+          <items>
+            <MenuItem mnemonicParsing="false" text="About" />
+          </items>
+        </Menu>
+      </menus>
+    </MenuBar>
+    <Pane layoutX="279.0" layoutY="14.0" prefHeight="63.0" prefWidth="833.0" styleClass="pane" AnchorPane.leftAnchor="279.0" AnchorPane.rightAnchor="88.0">
+      <children>
+        <Label layoutX="5.0" layoutY="3.0" text="Materia:" />
+        <Label layoutX="576.0" layoutY="24.0" text="Sección:" />
+        <Label fx:id="Materia" layoutX="81.0" layoutY="3.0" prefHeight="18.0" prefWidth="467.0" />
+        <Label fx:id="Seccion" layoutX="650.0" layoutY="24.0" prefWidth="87.0" />
+        <Label layoutX="5.0" layoutY="23.0" text="Carrera:" />
+        <Label fx:id="Carrera" layoutX="82.0" layoutY="24.0" prefHeight="18.0" prefWidth="467.0" />
+        <Label layoutX="577.0" layoutY="44.0" text="Período Académico:" />
+        <Label fx:id="Periodo" layoutX="740.0" layoutY="44.0" prefHeight="17.0" prefWidth="73.0" />
+        <Label layoutX="575.0" layoutY="3.0" text="Créditos:" />
+        <Label fx:id="Uc" layoutX="649.0" layoutY="3.0" prefHeight="18.0" prefWidth="44.0" />
+            <Label layoutX="5.0" layoutY="43.0" text="Docente:" />
+            <Label fx:id="Profesor" layoutX="84.0" layoutY="44.0" prefHeight="18.0" prefWidth="293.0" />
+            <Label layoutX="383.0" layoutY="44.0" text="Cédula:" />
+            <Label fx:id="CI" layoutX="446.0" layoutY="44.0" prefHeight="18.0" prefWidth="103.0" />
+      </children>
+    </Pane>
+    <ProgressIndicator fx:id="Acumulado" layoutX="954.0" layoutY="13.0" prefHeight="63.0" prefWidth="73.0" progress="0.0" AnchorPane.rightAnchor="9.0" />
+  </children>
+</AnchorPane>

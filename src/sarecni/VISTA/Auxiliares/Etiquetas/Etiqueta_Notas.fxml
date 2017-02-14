@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane maxWidth="400.0" prefHeight="72.0" prefWidth="400.0" styleClass="mainFxmlClass" stylesheets="@etiqueta_notas.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="Fecha" alignment="CENTER" layoutX="42.0" layoutY="2.0" prefHeight="18.0" prefWidth="318.0" text="Sábado, 5 de Marzo de 2016" />
+      <Label id="Posicion" fx:id="Posicion" alignment="CENTER" layoutX="8.0" layoutY="14.0" prefWidth="47.0" text="01" />      
+      <Label id="Porciento" fx:id="Porciento" alignment="CENTER_RIGHT" layoutX="188.0" layoutY="24.0" prefWidth="82.0" text="15%" />         
+      <Label id="Nota" fx:id="Nota" layoutX="296.0" layoutY="22.0" prefHeight="43.0" prefWidth="96.0" text="17" />
+         
+      <Label fx:id="Estrategia" alignment="CENTER" contentDisplay="CENTER" layoutX="61.0" layoutY="24.0" prefHeight="43.0" prefWidth="125.0" text="PROY" textAlignment="CENTER" wrapText="true" />
+        
+      <Label fx:id="Calculo" alignment="CENTER" contentDisplay="CENTER" layoutX="347.0" layoutY="47.0" prefHeight="20.0" prefWidth="46.0" text="3,40" />
+      
+   </children>
+</AnchorPane>

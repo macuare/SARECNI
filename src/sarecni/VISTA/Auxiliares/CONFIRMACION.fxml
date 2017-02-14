@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="Panel_Ancla" prefHeight="240.0" prefWidth="600.0" styleClass="mainFxmlClass" stylesheets="@../../MODELO/CSS/Auxiliares/confirmacion.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sarecni.CONTROLADOR.Auxiliares.CONFIRMACIONController">
+  <children>
+    <Button fx:id="Cancelar" layoutX="345.0" layoutY="194.0" mnemonicParsing="false" onAction="#CANCELADO" prefHeight="32.0" prefWidth="100.0" text="CANCELAR" />
+    <Button fx:id="Aceptar" layoutX="157.0" layoutY="194.0" mnemonicParsing="false" onAction="#ACEPTADO" prefHeight="32.0" prefWidth="100.0" text="ACEPTAR" />
+    <TextArea fx:id="Comentarios" layoutX="34.0" layoutY="43.0" prefHeight="128.0" prefWidth="535.0" wrapText="true" />
+    <Label fx:id="Titulo" layoutX="149.0" layoutY="14.0" prefWidth="302.0" text="Label" />
+  </children>
+</AnchorPane>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sarecni.CONTROLADOR.PRESENTACIONController">
+    <stylesheets>
+        <URL value="@/sarecni/MODELO/CSS/presentacion.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="5.0" layoutY="6.0" prefHeight="116.0" prefWidth="430.0" text="SARECNI">
+         <font>
+            <Font size="96.0" />
+         </font>
+         <effect>
+            <InnerShadow color="#05ffaf" />
+         </effect>
+      </Label>
+      <Label layoutX="11.0" layoutY="108.0" prefHeight="35.0" prefWidth="421.0" text="SISTEMA AUTOMATIZADO DE REGISTRO, EVALUACION, CONTROL DE NOTAS E INASISTENCIAS" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Label>
+      <Label layoutX="500.0" layoutY="348.0" text="V 1.0">
+         <font>
+            <Font size="35.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="Barra" layoutY="329.0" maxHeight="133.0" prefHeight="10.0" prefWidth="600.0" />
+      <Label layoutX="5.0" layoutY="349.0" prefWidth="485.0" text="Desarrollado por Cusatti Andy. Registrado bajo nro 1524652321" />
+   </children>
+</AnchorPane>
